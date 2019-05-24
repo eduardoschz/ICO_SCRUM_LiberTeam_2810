@@ -8,12 +8,16 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/conceptos', function(req, res, next) {
-  res.render('conceptos', { title: 'conceptos' });
+  res.render('conceptos', { title: 'Conceptos' });
 });
 
 router.get('/sistemas', function(req, res, next) {
   res.render('sistemas', { title: 'Tipos de Sistemas de Información' });
 });
+router.get('/InformacionUtil', function(req, res, next) {
+  res.render('InformacionUtil', { title: 'Informacion Util' });
+});
+
 
 router.get('/spt', function(req, res, next) {
   res.render('spt', { title: 'Sistema de Procesamiento de Transacciones' });
