@@ -31,7 +31,5 @@ router.get('/sistemas', function(req, res, next) {
 router.get('/spt', function(req, res, next) {
   res.render('spt', { title: 'Sistema de Procesamiento de Transacciones' });
 });
-=======
->>>>>>> 0f6eec05f5a080c2ede8d3457d216f5caaa012bb
 
 module.exports = router;
