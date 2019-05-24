@@ -9,6 +9,7 @@ router.get('/', function(req, res, next) {
 router.get('/conceptos', function(req, res, next) {
   res.render('conceptos', { title: 'Express' });
 });
+
 router.get('/Dato', function(req, res, next) {
   res.render('Dato', { title: 'Express' });
 });
@@ -30,5 +31,7 @@ router.get('/sistemas', function(req, res, next) {
 router.get('/spt', function(req, res, next) {
   res.render('spt', { title: 'Sistema de Procesamiento de Transacciones' });
 });
+=======
+>>>>>>> 0f6eec05f5a080c2ede8d3457d216f5caaa012bb
 
 module.exports = router;
