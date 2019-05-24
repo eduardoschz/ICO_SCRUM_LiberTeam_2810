@@ -18,4 +18,8 @@ router.get('/spt', function(req, res, next) {
   res.render('spt', { title: 'Sistema de Procesamiento de Transacciones' });
 });
 
+router.get('/mis', function(req, res, next) {
+  res.render('mis', { title: 'Sistema de Informacion para la Administracion' });
+});
+
 module.exports = router;
