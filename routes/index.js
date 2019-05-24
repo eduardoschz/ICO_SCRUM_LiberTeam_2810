@@ -22,4 +22,7 @@ router.get('/mis', function(req, res, next) {
   res.render('mis', { title: 'Sistema de Informacion para la Administracion' });
 });
 
+router.get('/crm', function(req, res, next) {
+  res.render('crm', { title: 'Administración de Relacion con el Cliente' });
+});
 module.exports = router;
