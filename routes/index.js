@@ -4,11 +4,7 @@ var router = express.Router();
 /* GET home page. */
 
 router.get('/', function(req, res, next) {
-<<<<<<< HEAD
   res.render('index', { title: 'Sistemas de Información' });
-=======
-  res.render('index', { title: 'Sistemas de Información 2810' });
->>>>>>> 3414235c01c79120c6fd129dd948e82670809d81
 });
 
 router.get('/conceptos', function(req, res, next) {
