@@ -30,4 +30,9 @@ router.get('/mis', function(req, res, next) {
 router.get('/crm', function(req, res, next) {
   res.render('crm', { title: 'Administración de Relacion con el Cliente' });
 });
+
+router.get('/smc', function(req, res, next) {
+  res.render('smc', { title: 'Proyecto de control de Riego' });
+});
+
 module.exports = router;
