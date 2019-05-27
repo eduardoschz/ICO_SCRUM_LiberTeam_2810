@@ -24,14 +24,27 @@ var firebaseConfig = {
  firebase.initializeApp(firebaseConfig);
 function actualiza(){
   var humedad = document.getElementById('miTexto').value;
+  var regar = document.getElementById('regar').value;
   var db = firebase.database().ref('/');
   if(humedad<=0 || humedad >100){
     alert("No valido");
     document.getElementById('miTexto').value = 0;
   }else{
-    db.update({'minHum': parseInt(humedad)});
+    db.update({'minHum': parseFloat(humedad)});
     alert("Humedad Minima actualizada a " + humedad);
   }
+  if (regar == "SI" || regar == "si" ||regar == "Si") {
+    db.update({'regar': 1});
+    alert("REGANDO");
+  }else if(regar == "NO" || regar == "No" ||regar == "no"){
+    alert("AUTOMATICO");
+    db.update({'regar': 0});
+  }else{
+    alert("NO VALIDO");
+  }
+
+  document.getElementById('miTexto').value = "";
+  document.getElementById('regar').value= "";
 
 }
 
