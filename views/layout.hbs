@@ -3,6 +3,8 @@
 
 <head>
   <title>{{title}}</title>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel='stylesheet' href='/stylesheets/style.css'/>
   <link rel='stylesheet' href='/stylesheets/materialize.min.css'/>
@@ -20,6 +22,7 @@
         <li><a class="dropdown-trigger" data-target="id_tipos" href="#">Tipos<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a class="dropdown-trigger" data-target="id_scrum" href="#">Scrum<i class="material-icons right">arrow_drop_down</i></a></li>
         <li><a class="dropdown-trigger" data-target="id_equipo" href="#">Equipo<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" data-target="id_control" href="#">Control<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
     </div>
   </nav>
@@ -48,6 +51,10 @@
     <li><a href="#">Eduardo (SM)</a></li>
     <li><a href="#">Luis (ST)</a></li>
     <li><a href="#">Marco (ST)</a></li>
+  </ul>
+
+  <ul id="id_control" class="dropdown-content">
+    <li><a href="smc">Monitor</a></li>
   </ul>
 
   {{{body}}}
@@ -96,5 +103,4 @@
 
   <script src="/javascripts/main.js"></script>
 </body>
-
 </html>
