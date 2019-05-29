@@ -17,7 +17,9 @@ router.get('/sistemas', function(req, res, next) {
 router.get('/InformacionUtil', function(req, res, next) {
   res.render('InformacionUtil', { title: 'Informacion Util' });
 });
-
+router.get('/Componentes', function(req, res, next) {
+  res.render('Componentes', { title: 'Componentes' });
+});
 
 router.get('/spt', function(req, res, next) {
   res.render('spt', { title: 'Sistema de Procesamiento de Transacciones' });
