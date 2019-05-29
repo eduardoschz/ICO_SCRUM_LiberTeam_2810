@@ -18,3 +18,16 @@ a {
 main {
   flex: 1 0 auto;
 }
+
+.parallax-container{
+  height: 250px;
+}
+
+.titulo {
+  width: 100%;
+}
+
+form {
+  padding: 30px 10%;
+}
+

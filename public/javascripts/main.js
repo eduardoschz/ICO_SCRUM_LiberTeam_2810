@@ -11,6 +11,12 @@ const instancesDropdown = M.Dropdown.init(elemsDropdown, {
     coverTrigger: false
 });
 
+// Parallax 
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.parallax');
+  var instances = M.Parallax.init(elems);
+});
+
 var firebaseConfig = {
    apiKey: "AIzaSyDIMFT1vMCI3tl-A90J2uV1hkEsjQK3LEo",
    authDomain: "si-micros-control.firebaseapp.com",
