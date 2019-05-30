@@ -6,9 +6,5 @@
 	- GitHub: [DialidW](https://github.com/DialidW)
 - Luis Angel Garcia Cervantes - ST
 	- GitHub [LuisGC01](https://github.com/LuisGC01)
-<<<<<<< HEAD
-- Marco Antonio Nava Cruz - ST
-=======
 - Marco Antonio Nava Cruz  - ST
->>>>>>> 1602d82794642ddf9c7baf0da47011057184897d
 	- GitHub: [Marineford2410](https://github.com/Marineford2410)
