@@ -22,7 +22,7 @@ var barraNavegacion = {
 /* GET home page. */
 
 router.get('/', function(req, res, next) {
-  res.render('index', { 
+  res.render('index', {
     title: 'Sistemas de Informacion',
     navigacion: barraNavegacion,
     VC: "inicio"                          // Nombre de los archivos css y js
@@ -56,66 +56,73 @@ hbs.registerHelper('submenus', function (tarjetas, temas, ligas) {
 /*===============================================================================================================*/
 
 router.get('/conceptos', function(req, res, next) {
-  res.render('conceptos', { 
+  res.render('conceptos', {
     title: 'Conceptos',
     navigacion: barraNavegacion,
-    VC: "conceptos" 
+    VC: "conceptos"
   });
 });
 
 router.get('/sistemas', function(req, res, next) {
-  res.render('sistemas', { 
+  res.render('sistemas', {
     title: 'Tipos de Sistemas de Informacion',
-    navigacion: barraNavegacion 
+    navigacion: barraNavegacion
   });
 });
 
 router.get('/InformacionUtil', function(req, res, next) {
-  res.render('InformacionUtil', { 
+  res.render('InformacionUtil', {
     title: 'Informacion Util',
-    navigacion: barraNavegacion 
+    navigacion: barraNavegacion
   });
 });
 
 router.get('/Componentes', function(req, res, next) {
-  res.render('Componentes', { 
+  res.render('Componentes', {
     title: 'Componentes',
-    navigacion: barraNavegacion 
+    navigacion: barraNavegacion
   });
 });
 
 router.get('/spt', function(req, res, next) {
-  res.render('spt', { 
+  res.render('spt', {
     title: 'Sistema de Procesamiento de Transacciones',
-    navigacion: barraNavegacion 
+    navigacion: barraNavegacion
   });
 });
 
 router.get('/mis', function(req, res, next) {
-  res.render('mis', { 
+  res.render('mis', {
     title: 'Sistema de Informacion para la Administracion',
     navigacion: barraNavegacion
   });
 });
 
 router.get('/crm', function(req, res, next) {
-  res.render('crm', { 
+  res.render('crm', {
     title: 'Administracion de Relacion con el Cliente',
-    navigacion: barraNavegacion 
+    navigacion: barraNavegacion
   });
 });
 
 router.get('/smc', function(req, res, next) {
-  res.render('smc', { 
+  res.render('smc', {
     title: 'Proyecto de control de Riego',
-    navigacion: barraNavegacion 
+    navigacion: barraNavegacion
+  });
+});
+
+router.get('/metodologiasAgiles', function(req, res, next) {
+  res.render('metodologiasAgiles', {
+    title: 'Metodologias Agiles',
+    navigacion: barraNavegacion
   });
 });
 
 router.get('/dialid', function(req, res, next) {
-  res.render('dialid', { 
+  res.render('dialid', {
     title: 'Dialid',
-    navigacion: barraNavegacion 
+    navigacion: barraNavegacion
   });
 });
 
