@@ -1,0 +1,22 @@
+body{
+    background-image: url('/images/fondo.jpg');
+}
+
+h1 {
+    margin: 20px auto;
+    padding: 20px 8%;
+    background: #366D70;
+}
+
+.row  {
+    padding: 25px;
+} 
+
+.si {
+    margin: 25px 0;
+    padding: 15px 8%;  
+}
+
+.si p {
+    text-align: justify;
+}

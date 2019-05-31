@@ -58,7 +58,8 @@ hbs.registerHelper('submenus', function (tarjetas, temas, ligas) {
 router.get('/conceptos', function(req, res, next) {
   res.render('conceptos', { 
     title: 'Conceptos',
-    navigacion: barraNavegacion 
+    navigacion: barraNavegacion,
+    VC: "conceptos" 
   });
 });
 
