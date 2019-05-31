@@ -53,6 +53,18 @@ hbs.registerHelper('submenus', function (tarjetas, temas, ligas) {
   return out + "\n";
 });
 
+hbs.registerHelper('caracteristicas', function (caracteristicas, descripcion, color) {
+  var out = '<div class="carousel">';
+  var tam = caracteristicas.length;
+  for(var i = 0; i < tam; i++) {
+    out = out + '\n<div class="carousel-item '+ color[i] + ' darken-1">';
+    out = out + '\n<p>' + caracteristicas[i] + '</p>';
+    out = out + '\n<p>' + descripcion[i] + '</p>';
+    out = out + "\n</div>";
+  }
+  return out + "\n</div>\n";
+});
+
 /*===============================================================================================================*/
 
 router.get('/conceptos', function(req, res, next) {
@@ -73,7 +85,30 @@ router.get('/sistemas', function(req, res, next) {
 router.get('/InformacionUtil', function(req, res, next) {
   res.render('InformacionUtil', { 
     title: 'Informacion Util',
-    navigacion: barraNavegacion 
+    navigacion: barraNavegacion,
+    VC: "infoUtil",
+    caracteristicas: [
+      "Accesible", "Exacta", "Completa", "Económica",
+      "Flexible", "Relevante", "Segura", "Simple",
+      "Oportuna", "Verificable"
+    ],
+    color: [
+      "red", "pink", "deep-purple", "blue",
+      "teal", "orange", "brown", "grey",
+      "cyan", "green"
+    ],
+    descripcion: [
+      "Mantener al alcance la información de una manera fácil, de tal forma que puedan obtenerla en el formato correcto y en el tiempo preciso para satisfacer sus necesidades.", 
+      "Libre de errores. El sistema debe contar con mecanismos de verificación.", 
+      "Contiene los hechos relevantes.", 
+      "El costo de la producción de la información debe ser relativamente barato. Las personas que toman las decisiones siempre deben balancear el valor de la información con el costo de producirla.",
+      "La información es flexible cuando puede utilizarse para una gran variedad de propósitos", 
+      "Es relevante cuando es importante para las personas que toman las decisiones.", 
+      "Protección al acceso de la información.", 
+      "La información debe establecerse en términos claros y concisos.",
+      "Cuando se requiere y tiene un valor para el negocio.", 
+      "Puede ser comprobada para verificar que es correcta."
+    ]
   });
 });
 

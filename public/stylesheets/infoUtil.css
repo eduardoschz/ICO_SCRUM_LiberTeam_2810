@@ -1,0 +1,38 @@
+body {
+    background-image: url('/images/fondo.jpg');
+}
+
+h1 {
+    margin: 20px auto;
+    padding: 20px 8%;
+    background: #03A9A7;
+    color: #fff;
+}
+
+div.card {
+    width: 400px;
+    height: 486px;
+}
+
+.iu {
+    background: #7AC0C8;
+}
+
+.carousel { 
+    height: 300px;
+}
+
+.carousel .carousel-item {
+    width: 220px;
+    height: 220px;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.imgUtil {
+    height: 400px;
+}
+
+figure {
+    margin: 25px auto;
+}
