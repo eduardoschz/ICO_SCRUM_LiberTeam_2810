@@ -1,0 +1,22 @@
+body {
+    background-image: url("/images/fondo.jpg"); 
+}
+
+h1 {
+    margin: 20px auto;
+    padding: 15px 5%;
+    background: #3431A2;
+    color: #fff;
+}
+
+.row div a{
+    margin: 10px;
+    width: 182px;
+    border-radius: 18px;
+}
+
+.modal li {
+    padding-left: 20px; 
+}
+
+

@@ -115,7 +115,8 @@ router.get('/InformacionUtil', function(req, res, next) {
 router.get('/Componentes', function(req, res, next) {
   res.render('Componentes', {
     title: 'Componentes',
-    navigacion: barraNavegacion
+    navigacion: barraNavegacion,
+    VC : "componentes"
   });
 });
 
