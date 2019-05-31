@@ -15,7 +15,7 @@ var barraNavegacion = {
       ["conceptos", "InformacionUtil", "Componentes"],
       ["spt", "mis", "crm"],
       ["#", "#", "#", "#"],
-      ["#", "#", "#", "#"]
+      ["dialid", "#", "#", "#"]
     ]
 }
 
@@ -23,7 +23,7 @@ var barraNavegacion = {
 
 router.get('/', function(req, res, next) {
   res.render('index', { 
-    title: 'Sistemas de Información',
+    title: 'Sistemas de Informacion',
     navigacion: barraNavegacion,
     VC: "inicio"                          // Nombre de los archivos css y js
   });
@@ -107,6 +107,13 @@ router.get('/crm', function(req, res, next) {
 router.get('/smc', function(req, res, next) {
   res.render('smc', { 
     title: 'Proyecto de control de Riego',
+    navigacion: barraNavegacion 
+  });
+});
+
+router.get('/dialid', function(req, res, next) {
+  res.render('dialid', { 
+    title: 'Dialid',
     navigacion: barraNavegacion 
   });
 });
