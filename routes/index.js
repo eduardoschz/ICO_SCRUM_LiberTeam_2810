@@ -64,14 +64,14 @@ router.get('/conceptos', function(req, res, next) {
 
 router.get('/sistemas', function(req, res, next) {
   res.render('sistemas', { 
-    title: 'Tipos de Sistemas de Información',
+    title: 'Tipos de Sistemas de Informacion',
     navigacion: barraNavegacion 
   });
 });
 
 router.get('/InformacionUtil', function(req, res, next) {
   res.render('InformacionUtil', { 
-    title: 'Información Útil',
+    title: 'Informacion Util',
     navigacion: barraNavegacion 
   });
 });
@@ -92,14 +92,14 @@ router.get('/spt', function(req, res, next) {
 
 router.get('/mis', function(req, res, next) {
   res.render('mis', { 
-    title: 'Sistema de Información para la Administración',
+    title: 'Sistema de Informacion para la Administracion',
     navigacion: barraNavegacion
   });
 });
 
 router.get('/crm', function(req, res, next) {
   res.render('crm', { 
-    title: 'Administración de Relación con el Cliente',
+    title: 'Administracion de Relacion con el Cliente',
     navigacion: barraNavegacion 
   });
 });
