@@ -8,7 +8,7 @@ var barraNavegacion = {
     temas: [
       ["Conceptos", "Información Útil", "Componentes"],
       ["TPS", "MIS", "CRM"],
-      ["Metodologias Ágiles", "Definición", "Roles", "Herramientas"],
+      ["Metodologías Ágiles", "Definición", "Roles", "Herramientas"],
       ["Dialid (PO)", "Eduardo (SM)", "Luis (ST)", "Marco (ST)"]
     ],
     ligas: [
@@ -23,7 +23,7 @@ var barraNavegacion = {
 
 router.get('/', function(req, res, next) {
   res.render('index', { 
-    title: 'Sistemas de Informacion',
+    title: 'Sistemas de Información',
     navigacion: barraNavegacion,
     VC: "inicio"                          // Nombre de los archivos css y js
   });
@@ -71,7 +71,7 @@ router.get('/sistemas', function(req, res, next) {
 
 router.get('/InformacionUtil', function(req, res, next) {
   res.render('InformacionUtil', { 
-    title: 'Informacion Util',
+    title: 'Información Útil',
     navigacion: barraNavegacion 
   });
 });
@@ -92,14 +92,14 @@ router.get('/spt', function(req, res, next) {
 
 router.get('/mis', function(req, res, next) {
   res.render('mis', { 
-    title: 'Sistema de Informacion para la Administracion',
+    title: 'Sistema de Información para la Administración',
     navigacion: barraNavegacion
   });
 });
 
 router.get('/crm', function(req, res, next) {
   res.render('crm', { 
-    title: 'Administración de Relacion con el Cliente',
+    title: 'Administración de Relación con el Cliente',
     navigacion: barraNavegacion 
   });
 });
