@@ -1,0 +1,59 @@
+.parallax-container{
+  height: 250px;
+}
+
+.parallax-container h1 {
+  margin: 70px 20%;
+  padding: 10px 0;
+  background-color: #f0cecdd2;
+}
+
+.titulo {
+  width: 100%;
+}
+
+form {
+  padding: 30px 10%;
+}
+
+.imgDef {
+  width: 300px;
+}
+
+.imgTipos {
+  width: 550px;
+}
+
+.imgScrum {
+  width: 550px;
+}
+
+
+section {
+  padding: 20px 8%;
+}
+
+section.tb{
+  background: #7AD8F4;
+}
+
+section.tipos{
+  background: #C2D8F0;
+}
+
+section.scrum{
+  background: #F27DB1;
+  color: #fcfcfc;
+}
+
+section p {
+  padding: 10px 0;
+  font-size: 1.5em;
+}
+
+.flotante {
+  position: relative; 
+  height: 70px;
+  padding: 10px 17%; 
+}
+
