@@ -15,7 +15,7 @@ var barraNavegacion = {
       ["conceptos", "InformacionUtil", "Componentes"],
       ["spt", "mis", "crm"],
       ["metodologiasAgiles", "scrum", "#", "#"],
-      ["dialid", "#", "#", "#"]
+      ["dialid", "#", "#", "marco"]
     ]
 }
 
@@ -169,6 +169,14 @@ router.get('/dialid', function(req, res, next) {
   res.render('dialid', {
     title: 'Dialid',
     navigacion: barraNavegacion
+  });
+});
+
+router.get('/marco', function(req, res, next) {
+  res.render('marco', {
+    title: 'Marco',
+    navigacion: barraNavegacion,
+    VC: "marco"
   });
 });
 
