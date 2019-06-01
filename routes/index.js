@@ -131,7 +131,8 @@ router.get('/spt', function(req, res, next) {
 router.get('/mis', function(req, res, next) {
   res.render('mis', {
     title: 'Sistema de Informacion para la Administracion',
-    navigacion: barraNavegacion
+    navigacion: barraNavegacion,
+    VC: "mis"
   });
 });
 
