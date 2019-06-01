@@ -17,7 +17,7 @@ var barraNavegacion = {
       ["metodologiasAgiles", "scrum", "#", "#"],
       ["dialid", "#", "#", "#"]
     ]
-}
+};
 
 /* GET home page. */
 
