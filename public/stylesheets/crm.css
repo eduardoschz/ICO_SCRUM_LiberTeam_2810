@@ -1,0 +1,50 @@
+body {
+    background-image: url('/images/fondo.jpg');
+}
+
+h1 {
+    margin: 15px auto;
+    padding: 15px 8%;
+    background: #ffeef6ea;
+}
+
+.definicion{
+    padding: 15px 4%;
+    margin: 15px 2%;
+    background: #388EFB;
+    color: #fff;
+
+}
+
+.definicion p, li {
+    text-align: justify;
+}
+
+.definicion img {
+    width: 42%;
+}
+
+.funciones{
+    margin: 15px 2%;
+    padding: 15px 4%;
+    background: #ffeef6;
+}
+
+.componentes {
+    margin: 0 auto;
+    width: 65%;
+}
+
+.cpnts {
+    padding: 15px 4%;
+    margin: 15px 2%;
+    background: #ffeef6;
+}
+
+.cpnts li {
+    text-align: center;
+}
+
+.imgTable {
+    height: 200px;
+}

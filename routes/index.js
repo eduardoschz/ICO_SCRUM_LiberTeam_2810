@@ -139,7 +139,8 @@ router.get('/mis', function(req, res, next) {
 router.get('/crm', function(req, res, next) {
   res.render('crm', {
     title: 'Administracion de Relacion con el Cliente',
-    navigacion: barraNavegacion
+    navigacion: barraNavegacion,
+    VC: "crm"
   });
 });
 
