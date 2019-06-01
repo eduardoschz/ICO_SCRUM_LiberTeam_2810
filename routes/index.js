@@ -15,7 +15,7 @@ var barraNavegacion = {
       ["conceptos", "InformacionUtil", "Componentes"],
       ["spt", "mis", "crm"],
       ["metodologiasAgiles", "scrum", "#", "#"],
-      ["dialid", "#", "Luis", "#"]
+      ["dialid", "eduardo", "Luis", "#"]
     ]
 };
 
@@ -165,16 +165,23 @@ router.get('/scrum', function(req, res, next) {
   });
 });
 
+router.get('/eduardo', function(req, res, next) {
+  res.render('eduardo', {
+    title: 'Eduardo Sanchez - SM',
+    navigacion: barraNavegacion
+  });
+});
+
 router.get('/Luis', function(req, res, next) {
   res.render('Luis', {
-    title: 'Luis',
+    title: 'Luis García - ST',
     navigacion: barraNavegacion
   });
 });
 
 router.get('/dialid', function(req, res, next) {
   res.render('dialid', {
-    title: 'Dialid',
+    title: 'Dialid - PO',
     navigacion: barraNavegacion
   });
 });
