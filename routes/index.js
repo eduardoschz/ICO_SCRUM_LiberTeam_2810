@@ -168,7 +168,8 @@ router.get('/scrum', function(req, res, next) {
 router.get('/eduardo', function(req, res, next) {
   res.render('eduardo', {
     title: 'Eduardo Sanchez - SM',
-    navigacion: barraNavegacion
+    navigacion: barraNavegacion,
+    VC: "eduardo"
   });
 });
 
