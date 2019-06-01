@@ -14,7 +14,7 @@ var barraNavegacion = {
     ligas: [
       ["conceptos", "InformacionUtil", "Componentes"],
       ["spt", "mis", "crm"],
-      ["metodologiasAgiles", "#", "#", "#"],
+      ["metodologiasAgiles", "scrum", "#", "#"],
       ["dialid", "#", "#", "#"]
     ]
 }
@@ -153,6 +153,13 @@ router.get('/smc', function(req, res, next) {
 router.get('/metodologiasAgiles', function(req, res, next) {
   res.render('metodologiasAgiles', {
     title: 'Metodologias Agiles',
+    navigacion: barraNavegacion
+  });
+});
+
+router.get('/scrum', function(req, res, next) {
+  res.render('scrum', {
+    title: 'Scrum',
     navigacion: barraNavegacion
   });
 });
