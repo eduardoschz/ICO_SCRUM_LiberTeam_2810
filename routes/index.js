@@ -14,7 +14,7 @@ var barraNavegacion = {
     ligas: [
       ["conceptos", "InformacionUtil", "Componentes"],
       ["spt", "mis", "crm"],
-      ["#", "#", "#", "#"],
+      ["metodologiasAgiles", "scrum", "#", "#"],
       ["dialid", "#", "#", "#"]
     ]
 }
@@ -98,15 +98,15 @@ router.get('/InformacionUtil', function(req, res, next) {
       "cyan", "green"
     ],
     descripcion: [
-      "Mantener al alcance la información de una manera fácil, de tal forma que puedan obtenerla en el formato correcto y en el tiempo preciso para satisfacer sus necesidades.", 
-      "Libre de errores. El sistema debe contar con mecanismos de verificación.", 
-      "Contiene los hechos relevantes.", 
+      "Mantener al alcance la información de una manera fácil, de tal forma que puedan obtenerla en el formato correcto y en el tiempo preciso para satisfacer sus necesidades.",
+      "Libre de errores. El sistema debe contar con mecanismos de verificación.",
+      "Contiene los hechos relevantes.",
       "El costo de la producción de la información debe ser relativamente barato. Las personas que toman las decisiones siempre deben balancear el valor de la información con el costo de producirla.",
-      "La información es flexible cuando puede utilizarse para una gran variedad de propósitos", 
-      "Es relevante cuando es importante para las personas que toman las decisiones.", 
-      "Protección al acceso de la información.", 
+      "La información es flexible cuando puede utilizarse para una gran variedad de propósitos",
+      "Es relevante cuando es importante para las personas que toman las decisiones.",
+      "Protección al acceso de la información.",
       "La información debe establecerse en términos claros y concisos.",
-      "Cuando se requiere y tiene un valor para el negocio.", 
+      "Cuando se requiere y tiene un valor para el negocio.",
       "Puede ser comprobada para verificar que es correcta."
     ]
   });
@@ -154,6 +154,13 @@ router.get('/smc', function(req, res, next) {
 router.get('/metodologiasAgiles', function(req, res, next) {
   res.render('metodologiasAgiles', {
     title: 'Metodologias Agiles',
+    navigacion: barraNavegacion
+  });
+});
+
+router.get('/scrum', function(req, res, next) {
+  res.render('scrum', {
+    title: 'Scrum',
     navigacion: barraNavegacion
   });
 });
