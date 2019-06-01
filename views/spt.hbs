@@ -1,97 +1,86 @@
-<h1>{{title}}</h1>
+<h1 class="center">{{title}}</h1>
 
-<article class="">
-  <h2>Definicion</h2>
-
-  <p class="container">
-    Su principal objetivo es llevar el registro de actividades y operaciones
-    en una empresa evitando su perdida y/o corrupción ante fallos. Por
-    ejemplo: depósitos en efectivo, pago de recibos, transferencias
-    monetarias, flujos de producción, registros de empleados, envíos,
-    entre otros, llamados transacciones.
-  </p>
-
-  <div class="container">
-        <div class="parallax"><img src="/images/bank.jpeg" alt="bank"></div>
-      </div>
+<article class="def row">
+  <div class="center col s5">
+    <h2>Definicion</h2>
+    <p >
+      Su principal objetivo es llevar el registro de actividades y operaciones
+      en una empresa evitando su perdida y/o corrupción ante fallos. Por
+      ejemplo: depósitos en efectivo, pago de recibos, transferencias
+      monetarias, flujos de producción, registros de empleados, envíos,
+      entre otros, llamados transacciones.
+    </p>
+  </div>
+  <div class="col s6">
+    <div class="parallax"><img src="/images/bank.jpeg" alt="bank"></div>
+  </div>
 </article>
   
-<section>
-  <h2>Transaccion</h2>
-  <p>
-    Una transacción es un intercambio de información que es reflejada en
-    un medio persistente (por ejemplo un DBMS), y debe contar con las
-    siguientes caracteristicas:
-   <ul>
-     <li>Atomicidad </li>
-     <li>Consistencia </li>
-     <li>Aislamiento </li>
-     <li>Durabilidad (Persistencia) </li>
-   </ul>
-  </p>
-
-  <img src="/images/POS-tps.jpg" alt="POS">
-</section>
-
-
-
-<section>
-<h2>Atomicidad</h2>
-<p>
-Se refiere a que la transacción debe ser completada en su totalidad o
-en su defecto debe realizarse una restauración del proceso a su
-estado original (antes iniciar la transacción).
-</p>
- <p>Ejemplo:
-   <ul>
-     <li>ATM</li>
-     <li>Pago de nomina</li>
-   </ul>
- </p>
-</section>
-
-<section>
-  <h2>Consistencia</h2>
-  <p>
-    Se debe salvaguardar la integridad de la información cumpliendo
-    reglas relacionales y de negocio.
-
-    El sistema debe ser capaz de identificar transacciones que vayan en
-    contra este principio y debe realizar una operación de roll-back.
-  </p>
+<section class="transac row">
+  <div class="center col s6">
+    <img src="/images/POS-tps.jpg" alt="POS">
+  </div>
+  <div class="col s6">
+    <h2>Transaccion</h2>
     <p>
-      Ejemplo: <br>
-      En un sistema de venta por internet, se solicita una compra para un
-cliente, se registra el pedido y se apartan los productos. Pero al momento de
-ralizar el pago la tarjeta de crédito no es aceptada. El sistema mantiene la
-integridad regresando los productos al stock.
+      Una transacción es un intercambio de información que es reflejada en
+      un medio persistente (por ejemplo un DBMS), y debe contar con las
+      siguientes caracteristicas:
+    <ul>
+      <li>Atomicidad </li>
+      <li>Consistencia </li>
+      <li>Aislamiento </li>
+      <li>Durabilidad (Persistencia) </li>
+    </ul>
     </p>
+  </div>
 </section>
 
-<section>
-  <h2>Aislamiento</h2>
-  <p>
-      Cada transacción debe ser considerada independiente de otras
-      transacciones. <br>
-      Esto permite que el sistema realice transacciones recurrentes y
-      simultaneas.
-  </p>
 
-  <img src="/images/POS.jpg" alt="POS">
+<section class="caracteristicas">
+    <article class="contenedor">
+        <section class="box">
+            <img class="icon" src="/images/atomico.jpg" alt="Atomico">
+            <article class="content">
+                <h3>Atomicidad</h3>
+                <p>Se refiere a que la transacción debe ser completada en su totalidad o
+                en su defecto debe realizarse una restauración del proceso a su
+                estado original</p>
+            </article>
+        </section>
+        
+        <section class="box">
+            <img class="icon" src="/images/consistencia.jpg" alt="Consistencia">
+            <article class="content">
+                <h3>Consistencia</h3>
+                <p>Se debe salvaguardar la integridad de la información cumpliendo reglas relacionales 
+                y de negocio. El sistema debe ser capaz de identificar transacciones que vayan en
+                contra este principio y debe realizar una operación de roll-back.</p>
+            </article>
+        </section>
+
+        <section class="box">
+                <img class="icon" src="/images/transaccion.jpg" alt="Aislamiento">
+            <article class="content">
+                <h3>Aislamiento</h3>
+                <p>Cada transacción debe ser considerada independiente de otras transacciones. 
+                Esto permite que el sistema realice transacciones recurrentes y simultaneas.</p>
+            </article>
+        </section>
+
+        <section class="box">
+                <img class="icon" src="/images/durabilidad.jpg" alt="Durabilidad">
+            <article class="content">
+                <h3>Durabilidad</h3>
+                <p>La transacciones y sus operaciones internas deben ser almacenadas a un medio 
+                persistente, hasta el momento que otra operación o transacción cambie el estado de 
+                los datos. En todo momento las transacciones aisladas pueden ser consultadas.</p>
+            </article>
+        </section>
+    </article>
 </section>
 
-<section>
-  <h2>Durabilidad</h2>
-  <p>
-
-    La transacciones y sus operaciones internas deben ser almacenadas a
-un medio persistente, hasta el momento que otra operación o
-transacción cambie el estado de los datos. <br>
-En todo momento las transacciones aisladas pueden ser consultadas.
-
-  </p>
-</section>
-<section>
+<section class="arqui center">
   <h2>Arquitectura de un TPS</h2>
   <img src="/images/arq_tps.jpg" alt="Arquitectura de un SPT">
 </section>

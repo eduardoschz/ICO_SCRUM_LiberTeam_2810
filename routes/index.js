@@ -123,7 +123,8 @@ router.get('/Componentes', function(req, res, next) {
 router.get('/spt', function(req, res, next) {
   res.render('spt', {
     title: 'Sistema de Procesamiento de Transacciones',
-    navigacion: barraNavegacion
+    navigacion: barraNavegacion,
+    VC: "tps"
   });
 });
 
